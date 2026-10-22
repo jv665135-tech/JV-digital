@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Diseño y desarrollo de páginas web para negocios.">
+  <title>JV Digital | Diseño Web</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #080d18;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #263247;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #49a6ff;
+    }
+
+    nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .hero {
+      min-height: 75vh;
+      padding: 100px 8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      background: radial-gradient(ellipse at 80% 30%, #15345e, #080d18 65%);
+    }
+
+    .tag {
+      color: #67b7ff;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    h1 {
+      max-width: 850px;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.08;
+      margin: 20px 0;
+    }
+
+    h1 span {
+      color: #49a6ff;
+    }
+
+    .hero p {
+      max-width: 600px;
+      color: #b9c5d8;
+      font-size: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 14px 24px;
+      border-radius: 8px;
+      background: #2687ee;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section.services {
+      padding: 75px 8%;
+    }
+
+    .services h2 {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+
+    .intro {
+      color: #b9c5d8;
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      padding: 28px;
+      background: #111c2d;
+      border: 1px solid #263750;
+      border-radius: 14px;
+    }
+
+    .card .emoji {
+      font-size: 32px;
+    }
+
+    .card h3 {
+      margin: 15px 0 8px;
+    }
+
+    .card p {
+      color: #b9c5d8;
+    }
+
+    .contact {
+      margin: 0 8% 75px;
+      padding: 38px;
+      background: #112544;
+      border-radius: 16px;
+    }
+
+    .contact p {
+      color: #c4d1e5;
+      margin-top: 8px;
+    }
+
+    footer {
+      padding: 25px 8%;
+      border-top: 1px solid #263247;
+      color: #a9b6ca;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        padding: 18px 5%;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        padding: 75px 6%;
+      }
+
+      section.services {
+        padding: 55px 6%;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .contact {
+        margin: 0 6% 50px;
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">JV <span>Digital</span></div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="tag">Diseño y desarrollo web</div>
+
+      <h1>Tu negocio merece una web <span>extraordinaria.</span></h1>
+
+      <p>
+        Creo páginas web modernas, rápidas y adaptables a celulares
+        para negocios que quieren destacar y llegar a más clientes.
+      </p>
+
+      <a class="button" href="#contacto">Hablemos de tu proyecto ↗</a>
+    </section>
+
+    <section class="services" id="servicios">
+      <h2>¿Qué puedo crear para ti?</h2>
+
+      <p class="intro">
+        Soluciones web pensadas para presentar tus servicios,
+        mostrar tus productos y hacer crecer tu negocio.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <div class="emoji">🌐</div>
+          <h3>Páginas para negocios</h3>
+          <p>Una presencia profesional para mostrar tus servicios y datos de contacto.</p>
+        </article>
+
+        <article class="card">
+          <div class="emoji">🛍️</div>
+          <h3>Tiendas y productos</h3>
+          <p>Páginas para presentar productos y ayudar a tus clientes a encontrarlos.</p>
+        </article>
+
+        <article class="card">
+          <div class="emoji">📱</div>
+          <h3>Diseño adaptable</h3>
+          <p>Diseños que se ven bien tanto en computadoras como en teléfonos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <h2>Hagamos realidad tu proyecto.</h2>
+      <p>Cuéntame tu idea y preparemos una página web para tu negocio.</p>
+      <a class="button" href="mailto:jv665135@gmail.com">Solicitar información ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> JV Digital. Diseño y desarrollo web.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
